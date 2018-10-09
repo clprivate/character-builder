@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { GameCharactersComponent } from './game-characters/game-characters.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GameCharactersComponent
   ],
   imports: [
     BrowserModule,
