@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Instructional content
 This design is based on the material presetnted in https://www.youtube.com/watch?v=GEdxydnpNFs
-Current video position: 7:00.
+Current video position: 14:00.
 
 ## Development server
 
