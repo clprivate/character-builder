@@ -6,7 +6,10 @@ import { AngularFireDatabase, AngularFireList} from 'angularfire2/database';
 @Injectable({
   providedIn: 'root'
 })
-export class GameCharacterService {
 
+export class GameCharacterService {
+  gameCharacterList: AngularFireList<any>;
+  selectedGameCharacter: GameCharacter = new GameCharacter();
+  
   constructor() { }
 }
