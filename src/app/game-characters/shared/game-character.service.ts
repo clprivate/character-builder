@@ -18,8 +18,27 @@ export class GameCharacterService {
   }
 
   getData() {
-    this.gameCharacterList = this.firebase.list('game-characters'); // this game-characters argument might be wrong. Node name needed.
+    this.gameCharacterList = this.firebase.list('gameCharacters'); // this gameCharacters argument might be wrong. Node name needed.
     return this.gameCharacterList;
   }
+
+  insertGameCharacter(gameCharacter: GameCharacter) {
+    this.gameCharacterList.push({
+        name: gameCharacter.name,
+        player: gameCharacter.player,
+        gameClass: gameCharacter.gameClass,
+        hp: gameCharacter.hp,
+        armor: gameCharacter.armor,
+        mightScore: gameCharacter.mightScore,
+        mightMod: gameCharacter.mightMod,
+        prowessScore: gameCharacter.prowessScore,
+        prowessMod: gameCharacter.prowessMod,
+        mindScore: gameCharacter.mindScore,
+        mindMod: gameCharacter.mindMod,
+        magicScore: gameCharacter.magicScore,
+        magicMod: gameCharacter.magicMod
+    })
+  }
   
+
 }
