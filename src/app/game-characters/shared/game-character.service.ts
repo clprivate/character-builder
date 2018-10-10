@@ -58,6 +58,8 @@ export class GameCharacterService {
     })
   }
 
-  
+  deleteGameCharacter($key: string) {
+    this.gameCharacterList.remove($key);
+  }
 
 }
