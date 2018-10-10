@@ -40,5 +40,24 @@ export class GameCharacterService {
     })
   }
   
+  updateChameCharacter(gameCharacter: GameCharacter) {
+    this.gameCharacterList.update(gameCharacter.$key, {
+        name: gameCharacter.name,
+        player: gameCharacter.player,
+        gameClass: gameCharacter.gameClass,
+        hp: gameCharacter.hp,
+        armor: gameCharacter.armor,
+        mightScore: gameCharacter.mightScore,
+        mightMod: gameCharacter.mightMod,
+        prowessScore: gameCharacter.prowessScore,
+        prowessMod: gameCharacter.prowessMod,
+        mindScore: gameCharacter.mindScore,
+        mindMod: gameCharacter.mindMod,
+        magicScore: gameCharacter.magicScore,
+        magicMod: gameCharacter.magicMod
+    })
+  }
+
+  
 
 }
