@@ -10,7 +10,7 @@ import { GameCharacterService } from './shared/game-character.service';
 
 export class GameCharactersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gameCharacterService: GameCharacterService) { }
 
   ngOnInit() {
   }
